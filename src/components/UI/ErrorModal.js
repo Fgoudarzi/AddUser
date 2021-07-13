@@ -28,7 +28,6 @@ const ErrorModal = props => {
             {ReactDom.createPortal(<Backdrop onClick={props.onClick} />, document.getElementById("backdrop-root"))}
             {ReactDom.createPortal(<Overlay onClick={props.onClick} error={props.error} />, document.getElementById("overlay-root"))}
         </>
-
     )
 }
 export default ErrorModal;
